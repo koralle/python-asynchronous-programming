@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace:cached
+      - ~/.zshrc:/root/.zshrc
+      - ~/.vimrc:/root/.vimrc
